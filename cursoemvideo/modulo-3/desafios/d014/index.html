@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        
+        thead > tr > th {
+            background-color: gray;
+            color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+
+        tbody td.numero {
+            text-align: center;
+        }
+
+        tbody tr.exatas, tbody tr.humanas {
+            background-color: gray;
+            color: #ffffff;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="exatas">
+                <th scope="row" colspan="4">Média de Exatas</th>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="humanas">
+                <th scope="row" colspan="4">Média de Humanas</th>
+                <td class="numero">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
